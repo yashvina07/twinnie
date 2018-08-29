@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
         if(TextUtils.isEmpty(password)){
-            Toast.makeText(this,"Please do enter password",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"Pleasne do enter password",Toast.LENGTH_LONG).show();
             return;
         }
 
