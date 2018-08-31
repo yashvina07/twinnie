@@ -4,25 +4,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bckimg"
 
-    >
+   >
 
 
     <LinearLayout
-        android:layout_centerVertical="true"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="238dp"
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Login"
-            android:id="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        tools:ignore="RtlCompat">
 
-            android:layout_gravity="center_horizontal" />
+        <!--<TextView-->
+        <!--android:id="@+id/textView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:text="Login"-->
+
+        <!--android:textAppearance="?android:attr/textAppearanceLarge" />-->
 
         <EditText
             android:id="@+id/editTextEmail"
@@ -30,9 +32,9 @@
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:hint="Enter email"
-            android:textColorHint="@color/black"
+            android:inputType="textEmailAddress"
 
-            android:inputType="textEmailAddress" />
+            android:textColorHint="@color/black" />
 
         <EditText
             android:id="@+id/editTextPassword"
@@ -40,26 +42,26 @@
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:hint="Enter password"
-            android:textColorHint="@color/black"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:textColorHint="@color/black" />
 
         <Button
             android:id="@+id/buttonSignin"
-            android:layout_width="match_parent"
+            style="@style/DefaultButton"
 
-            android:layout_margin="15dp"
+            android:layout_width="match_parent"
             android:layout_height="50dp"
 
-            style="@style/DefaultButton"
+            android:layout_margin="15dp"
             android:text="Login" />
 
         <!--<TextView-->
-            <!--android:text="Not have an account? Signup Here"-->
-            <!--android:id="@+id/textViewSignUp"-->
-            <!--android:textAlignment="center"-->
-            <!--android:layout_margin="15dp"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content" />-->
+        <!--android:text="Not have an account? Signup Here"-->
+        <!--android:id="@+id/textViewSignUp"-->
+        <!--android:textAlignment="center"-->
+        <!--android:layout_margin="15dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
 
     </LinearLayout>
 

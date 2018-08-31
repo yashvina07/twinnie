@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bckimg"
 
    >
 
@@ -14,8 +13,7 @@
         android:layout_height="238dp"
 
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="135dp"
+        android:layout_centerVertical="true"
         android:orientation="vertical"
         tools:ignore="RtlCompat">
 
@@ -28,21 +26,21 @@
 
 
             android:hint="Enter email"
-            android:textColorHint="@color/black"
+            android:inputType="textEmailAddress"
 
-            android:inputType="textEmailAddress" />
+            android:textColorHint="@color/black" />
 
         <EditText
             android:id="@+id/editTextPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            android:textColorHint="@color/black"
-
             android:hint="Enter password"
 
+            android:inputType="textPassword"
 
-            android:inputType="textPassword" />
+
+            android:textColorHint="@color/black" />
 
         <Button
             android:id="@+id/buttonSignup"
